@@ -10,7 +10,7 @@ export class AppComponent {
    *
    */
   constructor() {
-    console.log("HELLO WORLD");    
+    console.log("HELLO WORLD 22");    
   }
   title = 'app';
 }
