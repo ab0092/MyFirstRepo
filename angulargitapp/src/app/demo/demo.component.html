@@ -1,0 +1,20 @@
+<p>
+  demo works!
+</p>
+<strong>
+  {{value}}
+</strong>
+
+<form [formGroup]="user" (ngSubmit)=onSubmit()>
+  <input type="text" placeholder="user name" formControlName="username">
+  <br><br>
+  <input type="password" placeholder="password" formControlName="password">
+  <br><br>
+  <select formControlName="gender">
+    <option value="" selected>-- Select Gender --</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+  <br><br>
+  <button [disabled]="!user.valid" type="submit">Save</button>
+</form>

@@ -17,11 +17,11 @@
       "dom"
     ],
     "paths": {
-      "UtilServices": [
-        "dist/util-services"
+      "demolibrary": [
+        "dist/demolibrary"
       ],
-      "UtilServices/*": [
-        "dist/util-services/*"
+      "demolibrary/*": [
+        "dist/demolibrary/*"
       ]
     }
   }

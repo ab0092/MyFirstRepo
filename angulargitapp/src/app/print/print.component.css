@@ -1,0 +1,15 @@
+@font-face { 
+    
+    }
+
+    .barcode 
+    {font-weight: normal; 
+     font-style: normal; 
+     line-height:normal; 
+     font-family: 'CCodeCodabar_S3_Trial', 
+                   sans-serif; font-size: 32px}
+
+
+.lines td {
+    border: 1px solid black;
+}

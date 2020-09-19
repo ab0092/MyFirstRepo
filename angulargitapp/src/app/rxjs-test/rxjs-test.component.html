@@ -1,0 +1,30 @@
+<input type="text" id="name">
+<br>
+<span>Entered Values is : {{text}}</span> 
+
+<ng-select [items]="['India','Australia','Nigeria']"
+[(ngModel)]="text"
+[clearable]="false" 
+placeholder="{{ph}}"
+(focus)="changeDetector.detectChanges()"
+(search)="changeDetector.detectChanges()"
+(close)="changeDetector.detectChanges()"
+(blur)="changeDetector.detectChanges()"
+(change)="ph = '';changeDetector.detectChanges()">
+</ng-select>
+
+<div class="btn-group" dropdown>
+    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+            aria-controls="dropdown-basic">
+      Select <span class="caret"></span>
+    </button>
+    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+        role="menu" aria-labelledby="button-basic">
+      <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+      <li class="divider dropdown-divider"></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+      </li>
+    </ul>
+  </div>

@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -16,5 +16,21 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
+  <li>
+    <util-UtilServices></util-UtilServices>
+  </li>
+  <li>
+    <input type="text" appMonetary value="25">
+    <input type="button" value="Navigate" (click)="Nav()">
+  </li>
+  <li>
+    <input type="button" value="Check Value in Parent" (click)="CheckValue()">
+  </li>
 </ul>
-
+<app-test [inputList]="listForTest" [num]="numForTest"></app-test>
+<app-print></app-print> -->
+<!-- <app-rxjs-test></app-rxjs-test> -->
+<button (click)="changeChildValue()">Click</button>
+<br>
+<br>
+<app-demo></app-demo>

@@ -1,0 +1,12 @@
+<span>
+  <input type="button" (click)="addToList()" value="Add To List">
+ <input type="button"  value="Delete from list">
+</span>
+<ul>
+  <li *ngFor="let item of inputList; let i = index;">
+    {{item.name}} 
+    <span>
+      <input type="button" value="Delete Me" (click)="deleteFromList(i)">
+    </span>
+  </li>
+</ul>
